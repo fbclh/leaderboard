@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <title>Leaderboard</title>
+    <!-- Modern Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">Leaderboard</h1>
+    </header>
+
+    <main class="main">
+      <!-- Recent Score -->
+      <section class="recent-score">
+        <div class="recent-score__title">
+          <h2>Recent score</h2>
+          <button class="button" type="button">Refresh</button>
+        </div>
+        <div class="recent-score__players "></div>
+      </section>
+
+      <!-- Add Score -->
+      <section class="add-score">
+        <h2>Add your score</h2>
+        <form class="add-score__form">
+          <ul>
+            <li>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </li>
+            <li>
+              <input
+                type="number"
+                name="score"
+                placeholder="Your score"
+                required
+              />
+            </li>
+            <li>
+              <button class="button" type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__p">© 2022 Leaderboard®</p>
+    </footer>
+  </body>
+</html>
