@@ -1,0 +1,184 @@
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 0.2rem;
+  color: #333;
+}
+
+/*
+  =====================================
+  Header
+  =====================================
+*/
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 1em;
+}
+
+.header__title {
+  font-size: 2.5rem;
+}
+
+/* Main */
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 80%;
+}
+
+/*
+  =====================================
+  Recent Score
+  =====================================
+*/
+
+.recent-score {
+  margin-left: -1.75rem;
+}
+
+.recent-score__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+/* Dynamically add table */
+.list-players {
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  border: 0.125rem solid #333;
+  border-radius: 0.25rem;
+}
+
+.player-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+/*
+  =====================================
+  Add Score
+  =====================================
+*/
+
+.add-score {
+  margin-right: -1.75rem;
+}
+
+section {
+  width: 45%;
+  min-width: 14rem;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  margin: 0;
+  padding: 0.2rem;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: #f1356d;
+}
+
+li {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  /* border: 0; */
+  border-radius: 0.25rem;
+  border-radius: 0;
+  background-color: white;
+  /* background: #f1356d; */
+  /* color: #fff; */
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  /* padding-top: 0.5rem;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  border-width: 0px;
+  border-radius: 0.25rem;
+  background-color: rgb(8, 70, 158); 
+  color: rgb(250, 252, 255); 
+  font-size: 1.125rem;
+  line-height: 1.75rem; */
+}
+
+.form-input {
+  box-sizing: border-box;
+  max-width: 26rem;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
+input {
+  width: 100%;
+  padding-top: 0.25rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  border-width: 2px;
+  border-radius: 0;
+  /* border-radius: 0.25rem; */
+  font-size: 1rem;
+  line-height: 2.25rem;
+  line-height: 1.5rem;
+}
+
+/*
+  =====================================
+  Footer
+  =====================================
+*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 90%;
+  margin: 0 auto;
+  /* background-color: lightgray; */
+  padding: 10px;
+  /* border: 2px #333 solid; */
+  color: black;
+}
+
+.footer__p {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
