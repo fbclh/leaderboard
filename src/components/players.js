@@ -13,13 +13,13 @@ class Players {
 
   removePlayer(player) {
     this.players = this.players.filter((item) => item !== player);
-    this.populateFields;
+    this.populateFields();
   }
 
   addPlayer(newPlayer) {
     this.players.push(newPlayer);
-    this.populateFields;
-    this.displayPlayers;
+    this.populateFields();
+    this.displayPlayers();
   }
 
   displayPlayers() {

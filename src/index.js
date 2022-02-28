@@ -10,7 +10,7 @@ if (localStorage.savedPlayers) {
 }
 
 form.addEventListener('submit', (event) => {
-  event.preventDefault;
+  event.preventDefault();
   const newPlayer = {
     name: name.value,
     score: score.value,
