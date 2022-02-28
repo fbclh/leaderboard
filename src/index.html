@@ -16,20 +16,48 @@
     />
   </head>
   <body>
-    <!-- <section class="todo todo-container to-do-container">
-      <header class="todo__header">
-        <h1 class="todo__h1">Today's To Do</h1>
-        <i class="fas fa-sync-alt refresh"></i>
-      </header>
-      <input
-        class="todo__input new-task"
-        type="text"
-        placeholder="Add to your list..."
-      />
-      <div class="todo__container list-container">
-        <ul class="todo__root root"></ul>
-      </div>
-      <button class="todo__btn" type="button">Clear all completed</button>
-    </section> -->
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">Leaderboard</h1>
+    </header>
+
+    <main class="main">
+      <!-- Recent Score -->
+      <section class="recent-score">
+        <div class="recent-score__title">
+          <h2>Recent score</h2>
+          <button class="button" type="button">Refresh</button>
+        </div>
+        <div class="recent-score__players"></div>
+      </section>
+
+      <!-- Add Score -->
+      <section class="add-score">
+        <h2>Add your score</h2>
+        <form class="add-score__form">
+          <ul>
+            <li>
+              <input type="text" name="name" placeholder="Your Name" required />
+            </li>
+            <li>
+              <input
+                type="number"
+                name="score"
+                placeholder="Your score"
+                required
+              />
+            </li>
+            <li>
+              <button class="button" type="submit">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer__p">© 2022 Leaderboard®</p>
+    </footer>
   </body>
 </html>
