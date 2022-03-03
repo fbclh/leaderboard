@@ -151,6 +151,10 @@ input {
   line-height: 1.5rem;
 }
 
+.add-score__response-post {
+  color: rgb(0, 0, 173);
+}
+
 /*
   =====================================
   Footer
@@ -173,8 +177,4 @@ input {
 
 .hidden {
   display: none;
-}
-
-span {
-  display: block;
 }

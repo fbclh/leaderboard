@@ -16,7 +16,7 @@ if (localStorage.savedPlayers) {
   objPlayers.players = JSON.parse(localStorage.getItem('savedPlayers'));
 }
 
-const keyNewGameAPIs = async () => {
+async function keyNewGameAPIs() {
   const response = await fetch(urlNewGame, {
     method: 'POST',
     mode: 'cors',
@@ -29,30 +29,30 @@ const keyNewGameAPIs = async () => {
   });
   const data = await response.json();
   return data.result;
-};
+}
 
 if (localStorage.keyGame) {
   keyGame = localStorage.getItem('keyGame');
 } else {
-  const loadKey = async () => {
+  async function loadKey() {
     keyGame = await keyNewGameAPIs();
     localStorage.setItem('keyGame', keyGame);
-  };
+  }
   loadKey();
 }
 
-const getAPIs = async () => {
-  listPlayers.classList.add('hidden');
+async function getAPIs() {
   const response = await fetch(`
     https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${keyGame}/scores`);
   const data = await response.json();
-  objPlayers.players = data.result;
+  listPlayers.classList.add('hidden');
   listPlayers.classList.remove('hidden');
+  objPlayers.players = data.result;
   objPlayers.displayPlayers();
   return data.result;
-};
+}
 
-const postPlayer = async (newPlayer) => {
+async function postPlayer(newPlayer) {
   const response = await fetch(
     `
   https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${keyGame}/scores`,
@@ -69,7 +69,7 @@ const postPlayer = async (newPlayer) => {
   );
   const data = await response.json();
   return data.result;
-};
+}
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
