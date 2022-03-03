@@ -24,13 +24,13 @@ body {
 }
 
 .header__title {
-  font-size: 2.25rem;
-  text-transform: uppercase;
-  border-top: 0.25rem solid black;
-  border-bottom: 0.25rem solid black;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+  border-top: 0.25rem solid black;
+  border-bottom: 0.25rem solid black;
   color: rgb(0, 0, 173);
+  font-size: 2.25rem;
+  text-transform: uppercase;
 }
 
 /* Main */
@@ -122,6 +122,7 @@ li {
 
 button {
   padding: 0.75rem;
+  border: none;
   border-radius: 0.25rem;
   border-radius: 0;
   background-color: rgb(0, 0, 173);
@@ -129,7 +130,6 @@ button {
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-  border: none;
 }
 
 .form-input {
