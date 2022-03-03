@@ -1,8 +1,8 @@
 const listPlayers = document.querySelector('.recent-score__players');
 
 class Players {
-  constructor(name, score) {
-    this.name = name;
+  constructor(user, score) {
+    this.user = user;
     this.score = score;
     this.players = [];
   }
@@ -28,7 +28,7 @@ class Players {
       this.players.map((player) => {
         const divPlayer = document.createElement('tr');
         const elementPlayer = document.createElement('td');
-        elementPlayer.textContent = `${player.name}: ${player.score}`;
+        elementPlayer.textContent = `${player.user}: ${player.score}`;
         divPlayer.classList.add('.recent-score__container');
         divPlayer.appendChild(elementPlayer);
         listPlayers.appendChild(divPlayer);
