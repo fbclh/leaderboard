@@ -8,12 +8,6 @@ body {
   height: 100vh;
   padding: 0.2rem;
   color: #333;
-
-  /* background: url('background.png') bottom center; */
-
-  /* background-size: cover; */
-
-  /* color: hsl(0deg 0% 100% / 90%); */
 }
 
 /*
@@ -26,11 +20,17 @@ body {
   display: flex;
   justify-content: center;
   width: 90%;
-  margin: 1em;
+  margin: 1rem;
 }
 
 .header__title {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  border-top: 0.25rem solid black;
+  border-bottom: 0.25rem solid black;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: rgb(0, 0, 173);
 }
 
 /* Main */
@@ -41,15 +41,18 @@ body {
   width: 80%;
 }
 
+@media (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /*
   =====================================
   Recent Score
   =====================================
 */
-
-.recent-score {
-  margin-left: -1.75rem;
-}
 
 .recent-score__title {
   display: flex;
@@ -58,7 +61,7 @@ body {
 }
 
 tr:nth-child(even) {
-  background-color: lightgray;
+  background-color: rgb(241, 241, 247);
 }
 
 /* Dynamically add table */
@@ -79,13 +82,13 @@ tr:nth-child(even) {
 .recent-score__players {
   display: flex;
   flex-direction: column;
-  border: 2px solid  black;
+  border: 2px solid black;
 }
 
 td {
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   padding-right: 0.75rem;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
   padding-left: 0.75rem;
 }
 
@@ -96,7 +99,7 @@ td {
 */
 
 .add-score {
-  margin-right: -1.75rem;
+  margin-right: 0;
 }
 
 section {
@@ -110,16 +113,6 @@ ul {
   list-style: none;
 }
 
-.list-item {
-  margin: 0;
-  padding: 0.2rem;
-  cursor: pointer;
-}
-
-.list-item:hover {
-  color: #f1356d;
-}
-
 li {
   display: flex;
   justify-content: flex-end;
@@ -128,24 +121,15 @@ li {
 }
 
 button {
-  padding: 0.5rem;
+  padding: 0.75rem;
   border-radius: 0.25rem;
   border-radius: 0;
-  background-color: white;
+  background-color: rgb(0, 0, 173);
+  color: white;
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-
-  /* padding-top: 0.5rem;
-  padding-right: 2rem;
-  padding-bottom: 0.5rem;
-  padding-left: 2rem;
-  border-width: 0px;
-  border-radius: 0.25rem;
-  background-color: rgb(8, 70, 158);
-  color: rgb(250, 252, 255);
-  font-size: 1.125rem;
-  line-height: 1.75rem; */
+  border: none;
 }
 
 .form-input {
@@ -164,7 +148,6 @@ input {
   border-width: 2px;
   border-radius: 0;
   font-size: 1rem;
-  line-height: 2.25rem;
   line-height: 1.5rem;
 }
 
