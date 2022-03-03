@@ -1,5 +1,5 @@
 import Players from './components/players.js';
-import './styles.css';
+import './style.css';
 
 let keyGame;
 const form = document.querySelector('.add-score__form');
