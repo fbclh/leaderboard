@@ -9,15 +9,11 @@ body {
   padding: 0.2rem;
   color: #333;
 
-  /*  */
-
   /* background: url('background.png') bottom center; */
 
   /* background-size: cover; */
 
   /* color: hsl(0deg 0% 100% / 90%); */
-
-  /*  */
 }
 
 /*
@@ -195,8 +191,6 @@ input {
 .hidden {
   display: none;
 }
-
-/*  */
 
 span {
   display: block;
