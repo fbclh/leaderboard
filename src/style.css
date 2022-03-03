@@ -8,6 +8,11 @@ body {
   height: 100vh;
   padding: 0.2rem;
   color: #333;
+  /*  */
+  /* background: url('background.png') bottom center; */
+  /* background-size: cover; */
+  /* color: hsl(0deg 0% 100% / 90%); */
+  /*  */
 }
 
 /*
@@ -51,11 +56,6 @@ body {
   justify-content: space-between;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
 tr:nth-child(even) {
   background-color: lightgray;
 }
@@ -73,6 +73,19 @@ tr:nth-child(even) {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
+}
+
+.recent-score__players {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid  black;
+}
+
+td {
+  padding-top: 0.25rem;
+  padding-right: 0.75rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
 }
 
 /*
@@ -115,19 +128,12 @@ li {
 
 button {
   padding: 0.5rem;
-
-  /* border: 0; */
   border-radius: 0.25rem;
   border-radius: 0;
   background-color: white;
-
-  /* background: #f1356d; */
-
-  /* color: #fff; */
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
-
   /* padding-top: 0.5rem;
   padding-right: 2rem;
   padding-bottom: 0.5rem;
@@ -155,8 +161,6 @@ input {
   padding-left: 0.75rem;
   border-width: 2px;
   border-radius: 0;
-
-  /* border-radius: 0.25rem; */
   font-size: 1rem;
   line-height: 2.25rem;
   line-height: 1.5rem;
@@ -174,11 +178,7 @@ input {
   width: 90%;
   max-width: 90%;
   margin: 0 auto;
-
-  /* background-color: lightgray; */
   padding: 10px;
-
-  /* border: 2px #333 solid; */
   color: black;
 }
 
@@ -188,4 +188,10 @@ input {
 
 .hidden {
   display: none;
+}
+
+/*  */
+
+span {
+  display: block;
 }
