@@ -34,10 +34,10 @@ async function keyNewGameAPIs() {
 if (localStorage.keyGame) {
   keyGame = localStorage.getItem('keyGame');
 } else {
-  async function loadKey() {
+  const loadKey = async () => {
     keyGame = await keyNewGameAPIs();
     localStorage.setItem('keyGame', keyGame);
-  }
+  };
   loadKey();
 }
 
