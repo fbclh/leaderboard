@@ -28,7 +28,7 @@ const keyNewGameAPIs = async () => {
     },
   });
   const data = await response.json();
-  return data.result; //.slice(14, 34);
+  return data.result; 
 };
 
 if (localStorage.keyGame) {
