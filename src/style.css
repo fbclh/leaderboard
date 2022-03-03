@@ -8,10 +8,15 @@ body {
   height: 100vh;
   padding: 0.2rem;
   color: #333;
+
   /*  */
+
   /* background: url('background.png') bottom center; */
+
   /* background-size: cover; */
+
   /* color: hsl(0deg 0% 100% / 90%); */
+
   /*  */
 }
 
@@ -134,6 +139,7 @@ button {
   font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
+
   /* padding-top: 0.5rem;
   padding-right: 2rem;
   padding-bottom: 0.5rem;
